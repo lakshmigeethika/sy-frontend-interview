@@ -28,6 +28,7 @@ $(document).ready(function(){
         var newTitle = $("#newtitle").val().replace(/\s/g, '').length == 0 ? "Title " + ($(".item").length + 1) : $("#newtitle").val();
         var newItem = $(".item").eq(0).clone(true).appendTo(".item-list");;
         $(newItem).find(".title").html(newTitle);
+        $("#newtitle").val(" ");
 
     });
 });
